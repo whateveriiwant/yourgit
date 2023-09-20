@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{html,js,ts,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        main: ["Pretendard"],
+      },
       colors: {
         main: "#22272E",
         border: "#444C56",
