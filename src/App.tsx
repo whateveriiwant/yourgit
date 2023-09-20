@@ -1,8 +1,16 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { MainPage } from "./pages/MainPage/MainPage";
+import { ScrollTop } from "./utils/ScrollTop";
+
 const App = () => {
   return (
-    <div className="App">
-      <h1>React App</h1>
-    </div>
+    <Router>
+      <ScrollTop />
+      <Routes>
+        {/* <Route path="*" element={<NotFound />} /> */}
+        <Route path="/" element={<MainPage />} />
+      </Routes>
+    </Router>
   );
 };
 
